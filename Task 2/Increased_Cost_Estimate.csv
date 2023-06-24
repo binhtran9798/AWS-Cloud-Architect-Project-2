@@ -1,0 +1,29 @@
+Estimate summary									
+Upfront cost	Monthly cost	Total 12 months cost	Currency						
+0	18525.43	222305.16	USD						
+		* Includes upfront cost							
+									
+									
+Detailed Estimate									
+Group hierarchy	Region	Description	Service	Upfront	Monthly	First 12 months total	Currency	Status	Configuration summary
+My Estimate	US East (N. Virginia)		Amazon Route 53	0	183	2196	USD		"Hosted Zones (1), Number of Elastic Network Interfaces (2)"
+My Estimate	US East (N. Virginia)		Application Load Balancer	0	32.85	394.2	USD		Number of Application Load Balancers on Outposts (2)
+My Estimate	US East (N. Virginia)		VPN Connection	0	73	876	USD		"Working days per month (22), Number of Site-to-Site VPN Connections (2)"
+My Estimate	US East (N. Virginia)		Amazon EC2 	0	4673.28	56079.36	USD		"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 8), Advance EC2 instance (m5a.4xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), EBS Storage amount (1 TB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate	US East (N. Virginia)		Amazon RDS for MySQL	0	9158.04	109896.48	USD		"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (1 TB), Quantity (2), Instance type (db.m5.8xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (0 TB)"
+My Estimate	US East (N. Virginia)		S3 Standard	0	2304	27648	USD		S3 Standard storage (100 TB per month)
+My Estimate	US East (N. Virginia)		Data Transfer	0	0	0	USD		
+My Estimate	US East (N. Virginia)		AWS Data Transfer	0	0	0	USD		"DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate	US East (N. Virginia)		Amazon Elastic IP	0	0	0	USD		"Number of EC2 instances (6), Number of EIPs per instance (1)"
+My Estimate	US East (N. Virginia)		Amazon CloudWatch	0	2101.259	25215.11	USD		"Number of Metrics (includes detailed and custom metrics) (7000), GetMetricData: Number of metrics requested (), GetMetricWidgetImage: Number of metrics requested (), Number of other API requests (), Standard Logs: Data Ingested (1 GB), Logs Delivered to CloudWatch Logs: Data Ingested (1 GB), Logs Delivered to S3: Data Ingested (1 GB)"
+									
+									
+									
+Acknowledgement									
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."									
+									
+Changes been made									
+on EC2 service I increased 2 instance 									
+on RDS service I changed instance to db.m5.8xlarge									
+I added CloudWatch service to collect various logs and notify me for any alrms									
+on S3 service I increased 100 TB per month									
